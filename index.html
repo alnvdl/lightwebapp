@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lightwebapp</title>
+    <link rel="stylesheet" href="lightwebapp.css" />
+</head>
+
+<body>
+    <main class="lightwebapp">
+        <h1>lightwebapp</h1>
+
+        <p>lightwebapp is a minimal customization on top of
+            <a href="https://getbootstrap.com/docs/5.3/content/reboot/">Bootstrap's Reboot</a>
+            to provide a cleaner look to basic web apps that use inputs and
+            buttons.
+        </p>
+
+        <p>This page itself is styled with lightwebapp's custom CSS. The only
+            classes defined by this library are:
+        <ul>
+            <li><code>main.lightwebapp</code>: turns the
+                <code>&lt;main&gt;</code> element inside
+                <code>&lt;body&gt;</code> into 720px-wide centered
+                containers in desktop, and full-width containers in mobile.
+            </li>
+            <li><code>button.red</code>, <code>button.green</code>,
+                <code>button.blue</code> - color classes for
+                <code>&lt;button&gt;</code> elements.
+            </li>
+        </ul>
+        </p>
+
+        <p>Apart from <code>main.lightwebapp</code>, this library will never
+            provide any layout definitions or component classes.</p>
+
+        <p>The recommended approach for using lightwebapp is old-school: just
+            copy the CSS files into your project: I expect it to be updated
+            very rarely.</p>
+
+        <h2>Examples</h2>
+
+        <p>Below are the main customizations on top of Bootstrap's Reboot, in
+            addition to this entire page itself which uses
+            <code>main.lightwebapp</code>.
+        </p>
+
+        <strong>Styling for inputs and buttons</strong>
+        <p>All form elements have some basic styling applied.</p>
+        <form>
+            <input type="text" placeholder="Placeholder" />
+            <input type="submit" value="Submit" />
+        </form>
+
+        <hr />
+
+        <strong>Button group</strong>
+        <p>Any div containing just <code>&lt;button&gt;</code> elements is a
+            button group.</p>
+        <p>A button group without colored buttons has collapsed internal
+            borders.</p>
+        <div>
+            <button>
+                <span>Plain</span>
+            </button>
+            <button>
+                <span>buttons</span>
+            </button>
+            <button>
+                <span>have</span>
+            </button>
+            <button>
+                <span>collapsed</span>
+            </button>
+            <button>
+                <span>borders</span>
+            </button>
+        </div>
+        <br /><br />
+        <p>Colored buttons are possible in a group or outside of one, but they
+            have non-collapsed borders.</p>
+        <div>
+            <button class="red">
+                <span>❤️</span>
+                <span>Favorite</span>
+            </button>
+            <button class="green">
+                <span>✔</span>
+                <span>Done</span>
+                <button class="blue">
+                    <span>⚙️</span>
+                    <span>Settings</span>
+                </button>
+            </button>
+            <button disabled>
+                <span>🗙</span>
+                <span>Disabled</span>
+            </button>
+        </div>
+
+        <hr />
+
+        <strong>Keyboard shortcuts</strong><br />
+        <p>Applies to <code>&lt;kbd&gt;</code> elements.</p>
+        <kbd>Ctrl</kbd> + <kbd>Enter</kbd><br />
+        <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>A</kbd><br />
+    </main>
+
+</body>
+
+</html>
