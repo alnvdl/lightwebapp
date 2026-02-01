@@ -136,6 +136,11 @@ div:has(> button):not(:has(> :not(button))) {
 }
 
 /* Customizations on top of Reboot */
+a {
+    color: var(--lwa-font-color);
+    font-weight: 700;
+}
+
 code {
     color: color-mix(in hsl, var(--lwa-font-color), white 30%);
 }
