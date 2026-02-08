@@ -23,7 +23,7 @@ body:has(> main.lightwebapp) {
     min-height: 100vh;
     padding: 16px;
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
@@ -165,6 +165,7 @@ only screen and (max-width: 1280px) {
     body:has(> main.lightwebapp) {
         padding: 0;
         background: var(--lwa-background-main);
+        align-items: start;
     }
 
     main.lightwebapp {
